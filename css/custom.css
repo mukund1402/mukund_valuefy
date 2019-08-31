@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	color:#5b5b5b;
+  	font-size: 48px;
+	font-weight: lighter;
+	padding-top: 115px;
+}
+button.close {
+	font-size: 80px;
+	font-weight: lighter;
+	float: right;
+	margin-top: -80px;
+}
+.price {
+	color: #ffffff;
+}
+.price h5 {
+	font-size: 25px;
+	line-height: 55px;
+}
+.card1 .price {
+	background: #14a388;
+}
+.card2 .price {
+	background: #13bc9c;
+}
+.card3 .price {
+	background: #425b77;
+}
+.card1.selected {
+	border-left: 4px solid #14a388;
+}
+.dot {
+  	height: 15px;
+  	width: 15px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	margin-right: 20px;
+}
+.card1 .dot {
+	background-color: #14a388;
+}
+.card2 .dot {
+	background-color: #13bc9c;
+}
+.card3 .dot {
+	background-color: #425b77;
+}
+.btn-success {
+	background: #12d6b0;
+	border-color: #12d6b0;
+}
+.progressDiv {
+	width: 84%;
+	height: 325px;
+	position: relative;
+	left: 7%;
+	top: 100px;
+	display: inline-block;
+}
+
+.statChartHolder {
+	width: 35%;
+	height: 90%;
+	position: relative;
+	top: 15px;
+    display: inline-block;
+}
+/* Pie Chart */
+.progress-pie-chart {
+  	width:200px;
+  	height: 200px;
+  	border-radius: 50%;
+  	background-color: #E5E5E5;
+  	position: relative;
+}
+.progress-pie-chart.gt-50 {
+  	background-color: #81CE97;
+}
+
+.ppc-progress {
+  	content: "";
+  	position: absolute;
+  	border-radius: 50%;
+  	left: calc(50% - 100px);
+  	top: calc(50% - 100px);
+  	width: 200px;
+  	height: 200px;
+  	clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+  	content: "";
+  	position: absolute;
+  	border-radius: 50%;
+  	left: calc(50% - 100px);
+  	top: calc(50% - 100px);
+  	width: 200px;
+  	height: 200px;
+  	clip: rect(0, 100px, 200px, 0);
+  	background: #81CE97;
+  	transform: rotate(60deg);
+}
+.gt-50 .ppc-progress {
+  	clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+  	clip: rect(0, 200px, 200px, 100px);
+  	background: #E5E5E5;
+}
+
+.ppc-percents {
+  	content: "";
+  	position: absolute;
+  	border-radius: 50%;
+  	left: calc(50% - 173.91304px/2);
+  	top: calc(50% - 173.91304px/2);
+  	width: 173.91304px;
+  	height: 173.91304px;
+  	background: #fff;
+  	text-align: center;
+  	display: table;
+}
+.ppc-percents span {
+  	display: block;
+  	font-size: 1.2em;
+  	font-weight: bold;
+  	color: #81CE97;
+}
+
+.pcc-percents-wrapper {
+  	display: table-cell;
+  	vertical-align: middle;
+}
+
+.progress-pie-chart {
+  	margin: 0px auto 0;
+}
